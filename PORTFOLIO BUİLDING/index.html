@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Building</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Monthly Expense Application</h1>
+    </header>
+    <main class="container">
+      <form id="add-form">
+        <input
+          class="input-add"
+          id="income-input"
+          type="number"
+          placeholder="Enter your income."
+          required
+          autofocus
+        />
+        <button class="add-btn btn" type="submit" id="add-btn">Add</button>
+      </form>
+      <form id="expense-form">
+        <h2>Expense Form</h2>
+        <div class="box">
+          <div class="first-box">
+            <label class="expense-area" for="expense-area"
+              >Expense Area
+              <p>
+                <input
+                  id="expense-area"
+                  class="input"
+                  type="text"
+                  placeholder="Greengrocer,Store,Bill"
+                  required
+                  autofocus
+                /></p
+            ></label>
+          </div>
+          <div class="second-box">
+            <label class="date" for="date"
+              >Date
+              <p><input id="date" class="input" type="date" required /></p
+            ></label>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <label class="expense-amount" for="expense-amount"
+            >Expense Amount</label
+          >
+          <p>
+            <input
+              id="amount"
+              class="input"
+              type="number"
+              placeholder="1000 $"
+              required
+            />
+          </p>
+        </div>
+        <div class="save">
+          <button class="btn" id="save-btn">Save</button>
+        </div>
+      </form>
+      <table id="expense-table">
+        <thead id="expense-table-thead">
+          <tr class="x">
+            <th class="col col-1">Date</th>
+            <th class="col col-2">Expense Area</th>
+            <th class="col col-3">Amount</th>
+            <th class="col col-4">Process</th>
+          </tr>
+        </thead>
+        <tbody id="expense-body">
+          <!-- <tr>
+            <td>${date}</td>
+            <td>${alan}</td>
+            <td>${amount}</td>
+            <td><i class="fa-solid fa-trash-can"></i></td>
+        </tr>; -->
+        </tbody>
+      </table>
+      <table id="result-table">
+        <tbody class="text-end">
+          <tr class="row">
+            <th class="col">Your Income:</th>
+            <td class="col" id="your-income">0</td>
+          </tr>
+          <tr class="row">
+            <th class="col">Your Expense:</th>
+            <td class="col" id="your-expense">0</td>
+          </tr>
+          <tr class="row">
+            <th class="col">Rest:</th>
+            <td class="col" id="rest">0</td>
+          </tr>
+        </tbody>
+      </table>
+      <section>
+        <button class="btn" id="clean-btn">Clear Information</button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

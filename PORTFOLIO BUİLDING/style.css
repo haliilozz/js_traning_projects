@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-size: 25px;
+  margin-top: 30px;
+  color: #ffca2c;
+  text-align: center;
+}
+.container {
+  display: block;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#add-form {
+  display: flex;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.btn {
+  background-color: #ffca2c;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+.add-btn {
+  margin-left: 10px;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border: 1px #ff7f7f solid;
+  border-radius: 5px;
+}
+.input-add {
+  width: 93%;
+  height: 40px;
+  border: 1px #ff7f7f solid;
+  border-radius: 5px;
+}
+
+#expense-form h2 {
+  text-align: center;
+}
+#expense-form {
+  padding: 20px;
+  border: 0.5px #ff7f7f solid;
+  border-radius: 15px;
+  margin: 20px 10px;
+}
+.box {
+  display: flex;
+}
+p {
+  padding-top: 10px;
+}
+.first-box {
+  padding-top: 10px;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+.second-box {
+  padding-top: 10px;
+  flex-grow: 1;
+}
+.box-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 20px;
+}
+.save {
+  text-align: center;
+}
+section {
+  text-align: center;
+}
+
+#expense-table-thead {
+  display: flex;
+
+  justify-content: space-between;
+}
+#expense-body {
+  display: block;
+  justify-content: space-between;
+}
+.col {
+  padding: 10px;
+  width: 100vw;
+  border: 1px red solid;
+  text-align: center;
+}
+.col-1 {
+  width: 25%;
+}
+.col-2 {
+  width: 50%;
+}
+.col-4 {
+  width: 10%;
+}
+#result-table {
+  margin: 20px 10px;
+  display: flex;
+  margin: 20px 390px;
+  text-align: right;
+  width: 400px;
+}
